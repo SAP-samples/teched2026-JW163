@@ -4,66 +4,94 @@
 
 In this exercise you generate a working SAP Fiori elements application from an image and a data model, using the AI tooling in SAP Business Application Studio. The result is your custom app on top of an OData service created with the SAP Cloud Application Programming Model (CAP). That app and its OData service are the business knowledge the later parts build on.
 
-1. Drag and drop the image [manage-travels-list-report.png](../../../manage-travels-list-report.png) into the AI Chat window to attach it as context.
+Steps:
 
-    ![drag](./images/drag-image.png)
+- [1.1.1 Attach the reference image](#111-attach-the-reference-image)
+- [1.1.2 Run the generation prompt](#112-run-the-generation-prompt)
+- [1.1.3 Review the implementation plan](#113-review-the-implementation-plan)
+- [1.1.4 Confirm and let the assistant build](#114-confirm-and-let-the-assistant-build)
+- [1.1.5 Run the application](#115-run-the-application)
 
-    ![drop](./images/drop-image.png)
+## 1.1.1 Attach the reference image
 
-2. Copy and paste the following prompt into the task input and execute the task:
+Drag and drop the image [manage-travels-list-report.png](../../../manage-travels-list-report.png) into the AI Chat window to attach it as context.
 
-    ```
-    Generate a new CAP project and SAP Fiori app based on the attached Image
+![drag](./images/drag-image.png)
 
-    - Include technical key and business key for all entities.
-    - Use Dollar as currency throughout the application.
-    - Apply criticality for travel status
-    - Use SAPUI5 version 1.148.12 for the generated app.
+![drop](./images/drop-image.png)
 
-    Create implementation plan first, then proceed with confirmation.
-    Follow all instructions and consult available MCP servers.
-    Do not inspect any other image files in the workspace.
-    ```
+## 1.1.2 Run the generation prompt
 
-    ![execute prompt](./images/execute-prompt.png)
+Copy and paste the following prompt into the task input and execute the task:
 
-3. The AI assistant prepares an implementation plan.
+```
+Generate a new CAP project and SAP Fiori app based on the attached Image
 
-    <img src="./images/imp-plan1.png" alt="implementation plan" width="80%"/>
+- Include technical key and business key for all entities.
+- Use Dollar as currency throughout the application.
+- Apply criticality for travel status
+- Use SAPUI5 version 1.148.12 for the generated app.
 
-    <img src="./images/imp-plan2.png" alt="implementation plan" width="80%"/>
+Create implementation plan first, then proceed with confirmation.
+Follow all instructions and consult available MCP servers.
+Do not inspect any other image files in the workspace.
+```
+
+![execute prompt](./images/execute-prompt.png)
+
+## 1.1.3 Review the implementation plan
+
+The AI assistant prepares an implementation plan.
+
+<img src="./images/imp-plan1.png" alt="implementation plan" width="80%"/>
+
+<img src="./images/imp-plan2.png" alt="implementation plan" width="80%"/>
 
 > [!NOTE]
 > The implementation plan may differ from the example shown above. The images are for reference only.
 
-4. When prompted to proceed with the implementation plan, confirm by typing "Yes" or "Proceed".
+## 1.1.4 Confirm and let the assistant build
 
-5. Click **Allow** when prompted to run Bash commands.
+When prompted to proceed with the implementation plan, confirm by typing "**Yes**" or "**Proceed**".
 
-    <img src="./images/bash-approve.png" alt="approve bash" width="80%"/>
+Click **Allow** when prompted to run Bash commands.
+
+<img src="./images/bash-approve.png" alt="approve bash" width="80%"/>
 
 > [!CAUTION]
 > If you encounter the error "The prompt was not accepted due to safety violations", simply ask the assistant to retry the request. ![safety violation](./images/safety-violation.png)
 
-6. Review the files and content created by the assistant, then click **Keep** to accept them.
+Review the files and content created by the assistant, then click **Keep** to accept them.
 
-    <img src="./images/file-changes.png" alt="file changes" width="80%"/>
+<img src="./images/file-changes.png" alt="file changes" width="80%"/>
 
-7. If the assistant reaches the maximum number of requests allowed per turn in agent mode, click **Continue** to resume the implementation.
+If the assistant reaches the maximum number of requests allowed per turn in agent mode, click **Continue** to resume the implementation.
 
-    ![max request](./images/max-request.png)
+![max request](./images/max-request.png)
 
-8. After completing all the to-dos, the assistant confirms the successful creation of the CAP project and SAP Fiori app.
+After completing all the to-dos, the assistant confirms the successful creation of the CAP project and SAP Fiori app.
 
-9. To run the application, click the **Insert into Terminal** button when the assistant presents the watch command.
+## 1.1.5 Run the application
 
-    ![run preview](./images/preview-command.png)
+The assistant presents a **Run** panel with the commands to start the app. Copy the `cd` command shown in the panel.
 
-    The application opens in your browser and displays a travel list report application similar to the uploaded screenshot.
+![run preview](./images/preview-command.png)
 
-    ![application preview](./images/application-preview.png)
+1. Click the search bar at the top of SAP Business Application Studio and type `>create new terminal`.
+
+    ![open terminal command palette](./images/terminal1.png)
+
+2. Select **Terminal: Create New Terminal** (1). A terminal opens at the bottom of the screen (2). Paste the `cd` command there and press `Enter`.
+
+    ![terminal open](./images/terminal2.png)
+
+The application opens in your browser. Click **Go** to load the travel list.
+
+![application preview](./images/application-preview.png)
 
 You now have a working, custom SAP Fiori elements application running on a CAP OData service, built with AI tooling. **This is the end of Part 1.**
+
+Continue to - [Exercise 1.2 - Enable automatic data loading in List Report](../ex1.2/README.md)
 
 > **Want to go further with SAP Fiori elements and AI?** This session stops once your first app is up. To continue (enable automatic data loading, add columns, add an analytical chart, build object pages, add a custom section with the RichTextEditor) see the dedicated TechEd session **JW262 - OData to outcomes: Build AI-enabled SAP Fiori apps using SAP Fiori elements**.
 
@@ -141,6 +169,6 @@ You now have a working, custom SAP Fiori elements application running on a CAP O
 
 ## Summary
 
-You have successfully created a CAP project with an SAP Fiori elements application from an image. This completes Part 1.
+You have successfully created a CAP project with an SAP Fiori elements application from an image.
 
-Continue to - **Part 2 - From app to agent** _(content in preparation)_
+Continue to - [Exercise 1.2 - Enable automatic data loading in List Report](../ex1.2/README.md)
