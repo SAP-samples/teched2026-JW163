@@ -6,81 +6,79 @@ In this exercise you set up your development environment in SAP Business Applica
 
 As a participant of this hands-on session, you should already be set up with access to the SAP Business Application Studio landscape used below as your development environment.
 
-## Access SAP Business Application Studio
+Steps:
 
-1. Open https://lcapteched.eu10.build.cloud.sap/lobby in a new browser window or tab, which will ask you to login.
+- [1.0.1 Sign in](#101-sign-in)
+- [1.0.2 Access the Dev Space Manager](#102-access-the-dev-space-manager)
+- [1.0.3 Open the development space](#103-open-the-development-space)
+- [1.0.4 Open your project folder](#104-open-your-project-folder)
+- [1.0.5 Configure AI Chat (AI client)](#105-configure-ai-chat-ai-client)
 
-2. Enter the credentials in the browser window or tab to complete your login.
+## 1.0.1 Sign in
 
-    <img src="./images/ex0img23.png" alt="login" width="60%"/>
+Open the **SAP Business Application Studio** lobby: <a href="https://lcapteched.eu10.build.cloud.sap/lobby" target="_blank" rel="noopener">https://lcapteched.eu10.build.cloud.sap/lobby</a>
 
-## Access the Dev Space Manager
+Use the login credentials assigned to your number, from <a href="https://github.com/Sebastianwerner1985/163/blob/main/BAS163.md" target="_blank" rel="noopener">the credentials repository</a>.
 
-1. On the SAP Build landing page, click the **Switch Product** button in the top right corner and select **Dev Space Manager**.
+<img src="./images/ex0img23.png" alt="login" width="60%"/>
 
-    ![Access Dev Space Manager](images/ex0img0.png)
+## 1.0.2 Access the Dev Space Manager
 
-## Open the development space
+On the SAP Build landing page, click the **Switch Product** (1) button in the top right corner and select **Dev Space Manager** (2).
 
-1. Make sure that the development space **AgenticAppDevelopment** has the status running. If stopped, click the **start** button.
+![Access Dev Space Manager](images/ex0img0.png)
 
-    ![Restart Dev Space](images/ex0img4a.png)
+## 1.0.3 Open the development space
 
-2. Once running, click the development space name to open it. This can take some time.
+Make sure that the development space **AgenticAppDevelopment** has the status running. If stopped, click the **start** button.
 
-    ![Enter Dev Space](images/ex0img4.png)
+![Restart Dev Space](images/ex0img4a.png)
 
-3. Click **OK** in the popup window to accept the tracking settings in the newly created dev space.
+Once running, click the development space name to open it. This can take some time.
 
-    ![image](images/ex0img5.png)
+![Enter Dev Space](images/ex0img4.png)
 
-## Open your project folder
+Click **OK** in the popup window to accept the tracking settings in the newly created dev space.
 
-1. Select the **explorer icon** on the left side.
+![image](images/ex0img5.png)
 
-    ![image](images/ex0img10.png)
+## 1.0.4 Open your project folder
 
-2. Select **Open Folder**.
+Select the **explorer icon** on the left side.
 
-    ![image](images/ex0img11.png)
+![image](images/ex0img10.png)
 
-3. Select the **projects** folder from the drop down.
+Select **Open Folder**.
 
-    ![image](images/ex0img12.png)
+![image](images/ex0img11.png)
 
-4. Click **OK** and your window will reload.
+Select the **projects** folder from the drop down.
 
-    ![image](images/ex0img13.png)
+![image](images/ex0img12.png)
 
-5. Enable **Clipboard access** for the instance in the Chrome browser.
+Click **OK** and your window will reload.
 
-    ![image](images/ex0img28.png)
+![image](images/ex0img13.png)
 
-6. Download **[config.zip](../../../config.zip)** to your local machine, then drag and drop it into the projects folder in SAP Business Application Studio.
+Ensure that the projects folder has the following content.
 
-7. Open a terminal and run the following command to extract:
+![image](images/explorer.png)
 
-    ```bash
-    unzip config.zip
-    ```
-
-    ![image](images/unzip.png)
-
-8. Ensure that the projects folder has the following content.
-
-    ![image](images/explorer.png)
-
-## Configure AI Chat (AI client)
+## 1.0.5 Configure AI Chat (AI client)
 
 SAP Business Application Studio provides [AI Chat](https://help.sap.com/docs/bas/sap-business-application-studio/ai-chat) (powered by GitHub Copilot) as your AI coding assistant. You will use it throughout the exercises.
 
-1. Open **AI Chat**.
+Open **AI Chat**.
 
-    ![ai chat](./images/ex0img32.png)
+![ai chat](./images/ex0img32.png)
 
-2. Select the model **Claude 4.7 Opus (SAP Build)**.
+If a **Set BYOK utility models** prompt appears, dismiss it with the **X** (highlighted below) — you do not need it for this session.
 
-    ![ai chat](./images/ex0img34.png)
+![Dismiss the Set BYOK utility models prompt](./images/ex0img_setbyok.png)
+
+Select the model **Claude 4.7 Opus (SAP Build)**.
+
+![ai chat](./images/ex0img34.png)
 
 ## Summary
 
