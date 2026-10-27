@@ -90,7 +90,7 @@ the system decides *how* to present it in Joule Work.
 
 Open **SAP Joule Studio**: <https://747391938.eu10.sapdas.cloud.sap/new/>
 
-On the **Log On** screen, sign in with the credentials assigned to your number, from [the credentials repository](https://github.com/Sebastianwerner1985/163/blob/main/JouleStudio.md):
+On the **Log On** screen, sign in with the credentials assigned to your number, from [the credentials repository](https://github.com/Sebastianwerner1985/163/blob/main/JouleWork.md):
 
 1. Enter your **Email or User Name** (1).
 2. Enter your **Password** (2).
